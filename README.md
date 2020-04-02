@@ -10,11 +10,11 @@ pip3 install -r requirements.txt
 
 2. Set TOKENs
 
+Set TOKENs to this file.
+
 ```sh
 vim keys-example.py
 ```
-
-Set TOKENs to this file.
 
 Change file name 'keys-example.py' to 'keys.py'
 
@@ -27,3 +27,13 @@ mv keys-exapmle.py keys.py
 ```sh
 python3 run.py
 ```
+
+## Features
+
+You can execute linux command from Slack.
+
+```
+@hoge ///(Linux command)
+```
+
+Bot reply outputs.

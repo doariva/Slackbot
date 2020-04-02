@@ -2,7 +2,7 @@
 
 ## Features
 
-1. You can execute linux command from Slack.
+You can execute linux command from Slack.
 
 ```
 @(BOTNAME) ///(Linux command)

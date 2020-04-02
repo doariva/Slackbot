@@ -2,13 +2,14 @@
 
 ## Features
 
-You can execute linux command from Slack.
+1. You can execute linux command from Slack.
 
 ```
 @(BOTNAME) ///(Linux command)
 ```
-
 Bot reply excute results.
+
+![image](https://user-images.githubusercontent.com/44022415/78248900-6dd46880-7528-11ea-9ad3-2cd53adad85e.png)
 
 ## Setup
 

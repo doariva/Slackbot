@@ -1,5 +1,15 @@
 # Slackbot
 
+## Features
+
+You can execute linux command from Slack.
+
+```
+@(BOTNAME) ///(Linux command)
+```
+
+Bot reply excute results.
+
 ## Setup
 
 1. Install module
@@ -28,15 +38,6 @@ mv keys-exapmle.py keys.py
 python3 run.py
 ```
 
-## Features
-
-You can execute linux command from Slack.
-
-```
-@hoge ///(Linux command)
-```
-
-Bot reply outputs.
 
 ## Autostart
 

@@ -1,0 +1,11 @@
+[Unit]
+Description=Slackbot
+
+[Service]
+ExecStart=/home/[USERNAME]/Slackbot/run.py # Please change path
+# Change USERNAME
+User=USERNAME
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

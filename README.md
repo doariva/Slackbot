@@ -37,3 +37,14 @@ You can execute linux command from Slack.
 ```
 
 Bot reply outputs.
+
+## Autostart
+
+```sh
+mv Slackbot.service /etc/systemd/system/
+systemctl daemon-reload
+systemctl enable Slackbot.service
+systemctl status Slackbot.service
+```
+
+If you can see `active(running)`, it is working.

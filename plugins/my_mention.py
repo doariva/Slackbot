@@ -44,7 +44,7 @@ def mention_func(message):
     message.reply('メンションされた') # メンション
 
 # cpuとかの温度を投げる(メンション不要)
-@listen_to('sensors')
+@listen_to('temp')
 def mention_all(message):
     data["text"] = "```" + exec_linux_cmd('sensors') + "```"
     requests.post(url, data=data)

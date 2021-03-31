@@ -33,18 +33,27 @@ def test_ls(message):
         cmd = message.body["text"][3:]
         message.reply("run command:  " + cmd)
         data["text"] = "```" + exec_linux_cmd(cmd) + "```"
+        data['channel'] = "command"
         requests.post(url, data=data)
         #message.reply(data)
     except:
         message.reply("Error.")
 
-#  メンションテスト
+#  Mention Test
 @respond_to('test_mention')
 def mention_func(message):
-    message.reply('メンションされた') # メンション
+    message.reply('I was mentiond') # Mention
 
 # cpuとかの温度を投げる(メンション不要)
 @listen_to('^temp$')
 def mention_all(message):
+    data['channel'] = "command"
     data["text"] = "```" + exec_linux_cmd('sensors') + "```"
+    requests.post(url, data=data)
+    
+# speedtest
+@listen_to('^speedtest$')
+def mention_all(message):
+    data['channel'] = "command"
+    data["text"] = "```" + exec_linux_cmd('speedtest --server 28910') + "```"
     requests.post(url, data=data)

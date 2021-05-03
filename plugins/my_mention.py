@@ -55,5 +55,5 @@ def mention_all(message):
 @listen_to('^speedtest$')
 def mention_all(message):
     data['channel'] = "command"
-    data["text"] = "```" + exec_linux_cmd('speedtest --server 28910') + "```"
+    data["text"] = "```" + exec_linux_cmd('speedtest') + "```"
     requests.post(url, data=data)
